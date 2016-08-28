@@ -1,0 +1,63 @@
+@font-face {
+	font-family: Ministry;
+	src: url(fonts/MINISTRY);
+}
+@font-face {
+	font-family: Dense-Regular;
+	src: url(fonts/Dense-Regular.otf);
+}
+#outerContainer{
+	width: 100%;
+	height: 100%;
+	background-image: url(images/theGreatWave.png);
+	background-size: 100% 45%;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	text-align: center;
+}
+#nameHeader1{
+	font-family: Ministry !important;
+	font-size: 8rem !important;
+}
+.header3{
+	font-family: Dense-Regular !important;
+	font-size: 2rem !important;
+}
+.header2{
+	font-family: Dense-Regular !important;
+	font-size: 2rem !important;
+}
+#topRealign{
+	top: 50%;
+}
+a:link {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+a:visited {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+a:active {
+    text-decoration: none !important;
+    color: white !important;
+}
+.github.button{
+	background-color: green !important;
+}
+.file.button{
+	background-color: orange !important;
+}
+.mail.button{
+	background-color: maroon !important;
+}
+.phone.button{
+	background-color: olive !important;
+}
