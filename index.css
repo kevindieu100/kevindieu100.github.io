@@ -6,10 +6,17 @@
 	font-family: Dense-Regular;
 	src: url(fonts/Dense-Regular.otf);
 }
+@font-face{
+	font-family: Aventura-Bold;
+	src: url(fonts/Aventura-Bold.otf);
+}
+#outerContainer{
+	text-align: center;
+}
 .loader {
     position: fixed;
-    left: 0px;
-    top: 0px;
+    left: 0vh;
+    top: 0vh;
     width: 100%;
     height: 100%;
     z-index: 9999;
@@ -17,29 +24,77 @@
     background: url('images/giphy.gif') 50% 50% no-repeat rgb(249,249,249);
     opacity: 1;
 }
-#outerContainer{
-	width: 100%;
-	height: 100%;
-	background-image: url(images/theGreatWave.png);
-	background-size: 100% 45%;
-	background-repeat: no-repeat;
-	background-position: left bottom;
+.circle{
+	border-radius: 50%;
 	text-align: center;
+	border-width:1px;  
+  box-shadow: 
+    0 0 0 2px hsl(0, 0%, 30%),
+    0 0 0 5px hsl(0, 0%, 70%),
+    0 0 0 10px hsl(0, 0%, 90%) !important;
 }
-#nameHeader1{
-	font-family: Ministry !important;
-	font-size: 8rem !important;
+.center{
+	position: absolute;
+	width: calc(14vh + 100px);
+	height: calc(14vh + 100px);
+	display: block;
+	top: calc(50vh - 7vh - 50px);
+	background-color: white;
+	left: 0;
+	right: 0;
+	margin:  auto;
 }
-.header3{
-	font-family: Dense-Regular !important;
-	font-size: 2rem !important;
+.surrounding{
+	z-index: -100;
+	position: absolute;
+	width: calc(2vh + 100px);
+	height: calc(2vh + 100px);
+	display: block;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	top: calc(50vh - 1vh - 50px);
+	background-color: white;
+	margin:  auto;
+	transition: box-shadow 0.2s ease-in-out;
 }
-.header2{
-	font-family: Dense-Regular !important;
-	font-size: 2rem !important;
+.surrounding:hover{
+	width: calc(2.5vh + 100px);
+	height: calc(2.5vh + 100px);
+	background-size: calc(15vh + 100px);
+	box-shadow: 0 0 0 0.2vw hsl(0, 0%, 30%),0 0 0 0.5vw hsl(0, 0%, 70%),0 0 0 0.75vw hsl(0, 0%, 90%) !important;
 }
-#topRealign{
-	top: 50%;
+.circleTitle{
+	display: block;
+	font-family: 'Lobster', Georgia, Times, serif;
+	font-size: calc(1vw + 9.375px);
+    margin-top: calc(50% - .355vw - 4.6875px );
+    color: black;
+}
+#headshot{
+	background: url("images/headshot.jpg") 60% 50% no-repeat;
+	background-size: calc(17vh + 100px);
+    transition: box-shadow 0.2s ease-in-out;
+}
+#headshot:hover{
+	box-shadow: 0 0 0 0.5vw hsl(0, 0%, 30%),0 0 0 1vw hsl(0, 0%, 70%),0 0 0 2vw hsl(0, 0%, 90%) !important;
+}
+#name{
+	position: relative;
+	font-family: 'Lobster', Georgia, Times, serif;
+	display: block;
+	font-size: 8vh;
+	top: 14vh;
+	color: black;
+}
+#intro{
+	position: relative;
+	font-family: 'Cabin', Helvetica;
+	font-size: 2.5vh;
+	top: 15vh;
+	color: black;
+	display: block;
 }
 a:link {
     text-decoration: none !important;
@@ -60,15 +115,54 @@ a:active {
     text-decoration: none !important;
     color: white !important;
 }
-.github.button{
-	background-color: green !important;
+
+.contactCircle{
+	border-radius: 50%;
+	z-index: -100;
+	position: absolute;
+	width: calc(2vh + 50px);
+	height: calc(2vh + 50px);
+	display: block;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	top: calc(50vh - 1vh - 25px);
+	margin:  auto;
+	transition: box-shadow 0.2s ease-in-out;
+	box-shadow: 
+    0 0 0 1px hsl(0, 0%, 30%),
+    0 0 0 2px hsl(0, 0%, 70%),
+    0 0 0 5px hsl(0, 0%, 90%) !important;
+    background-size: calc(1vh + 50px);
 }
-.file.button{
-	background-color: orange !important;
+.contactCircle:hover{
+	width: calc(2vh + 50px);
+	height: calc(2vh + 50px);
+	background-size: calc(1vh + 100px);
+	box-shadow: 0 0 0 0.5vw hsl(0, 0%, 30%),0 0 0 1vw hsl(0, 0%, 70%),0 0 0 2vw hsl(0, 0%, 90%) !important;
 }
-.mail.button{
-	background-color: maroon !important;
+#fbCircle{
+	background: url('images/facebook.png') no-repeat center rgb(59, 89, 152);
+	background-size: calc(2vh + 30px);
 }
-.phone.button{
-	background-color: olive !important;
+#linkedinCircle{
+	background: url('images/linkedin.png') no-repeat center rgb(0, 119, 181);
+	background-size: calc(2vh + 10px);
+}
+#githubCircle{
+	background: url('images/github.png') no-repeat center rgb(108,198,68);
+	background-size: calc(2vh + 10px);
+}
+#resumeCircle{
+	background: url('images/resume.png') no-repeat center rgb(255,153, 51);
+	background-size: calc(2vh + 10px);
+}
+#emailCircle{
+	background: url('images/email.png') no-repeat center rgb(204,0, 0);
+	background-size: calc(2vh + 10px);
+}
+#phoneCircle{
+	background: url('images/phone.png') no-repeat center rgb(0, 204, 102);
+	background-size: calc(2vh + 10px);
 }

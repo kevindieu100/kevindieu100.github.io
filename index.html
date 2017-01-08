@@ -2,50 +2,38 @@
 	<head>
 		<!--build:css css/styles.min.css-->
 		<link rel="stylesheet" href="index.css" />
-		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 		<!--end build-->
 	</head>
 
 	<body>
 		<!--build:js js/main.min.js -->
-		<script src="js/jquery-3.1.0.min.js"></script>
-		<script src="semantic/dist/semantic.min.js"></script>
-		<script src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/velocity.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 		<!-- endbuild -->
 		<div class="loader"></div>
-		<div id="outerContainer">
-			<div id="topRealign">
-				<span id="nameHeader1" class="ui header">K&nbsp;&nbsp;E&nbsp;&nbsp;V&nbsp;&nbsp;I&nbsp;&nbsp;N&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;&nbsp;I&nbsp;&nbsp;E&nbsp;&nbsp;U</span>
-				<br/>
-				<span class="ui header header3">S O F T W A R E&nbsp;&nbsp;D E V E L O P E R&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U S C&nbsp;&nbsp;T R O J A N&nbsp;&nbsp;' 1 9</span>
-				<br/>
-				<span class="ui header header3">" w h i l e (  <span id="temp">!</span> ( s u c c e e d == t r y ( ) ) ) ; "</span>
-				<br/>
-				<br/>
-				<span class="header2"> Sorry, site is currently under maintenance.
-				</span>
-				<br/>
-				<br/>
-				<button class="ui circular facebook icon button" data-tooltip="Facebook" data-position="bottom center">
-				  <a href="https://www.facebook.com/kebumdoo"><i class="facebook icon"></i></a>
-				</button>
-				<button class="ui circular linkedin icon button" data-tooltip="LinkedIn" data-position="bottom center">
-				  <a href="https://www.linkedin.com/in/kevindieu"><i class="linkedin icon"></i></a>
-				</button>
-				<button class="ui circular github icon button" data-tooltip="Github" data-position="bottom center">
-				  <a href="https://www.github.com/kevindieu100"><i class="github icon"></i></a>
-				</button>
-				<button class="ui circular file text outline icon button" data-tooltip="Resume" data-position="bottom center">
-				  <a href="https://drive.google.com/file/d/0B5MG9sn3DEcJUGZNNnB0Qy1JRUU/view?usp=sharing"><i class="file text outline icon"></i></a>
-				</button>
-				<button class="ui circular mail icon button" data-tooltip="kdieu@usc.edu" data-position="bottom center">
-				  <a href="#" ><i class="mail icon"></i></a>
-				</button>
 
-				<button class="ui circular phone icon button" data-tooltip="(669)300-4337" data-position="bottom center">
-				  <a href="#" ><i class="phone icon"></i></a>
-				</button>
-			</div> <!--end of topRealign-->
-		</div><!--end of outer container-->
+		<div id="outerContainer">
+			<span id="name">Kevin Dieu</span>
+			<span id="intro">Software Engineer <br> USC Trojan '19</span>
+			<!-- <span class="intro"> USC Trojan '19 </span> -->
+			<div id="headshot" class="center circle"></div>
+			<div id="aboutCircle" class= "surrounding circle"><span class="circleTitle"> About </span></div>
+			<div id="academicsCircle" class="surrounding circle"><span class="circleTitle"> Academics </span></div>
+			<div id="projectsCircle" class="surrounding circle"><span class="circleTitle"> Projects </span></div>
+			<div id="experienceCircle" class="surrounding circle"><span class="circleTitle">Experience </span></div>
+			<div id="involvementCircle" class="surrounding circle"><span class="circleTitle"> Involvement</span></div>
+			<div id="contactCircle" class="surrounding circle"><span class="circleTitle"> Contact </span></div>
+
+
+			<a id="fbCircle" class="contactCircle" href="https://www.facebook.com/kebumdoo"></a>
+			<a id="githubCircle" class="contactCircle" href="https://www.github.com/kevindieu100"></a>
+			<a id="linkedinCircle" class="contactCircle" href="https://www.linkedin.com/in/kevindieu"></a>
+			<a id="resumeCircle" class="contactCircle" href="https://drive.google.com/file/d/0B5MG9sn3DEcJUGZNNnB0Qy1JRUU/view?usp=sharing"></a>
+			<a id="emailCircle" class="contactCircle" href="#" title="kdieu@usc.edu"></a>
+			<a id="phoneCircle" class="contactCircle" href="#" title="(669) 300 - 4337"></a>
+		</div><!--end of outerContainer-->
 	</body>
 </html>
