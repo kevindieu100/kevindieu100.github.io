@@ -753,26 +753,32 @@ h1, h2, h3, h4, h5, h6, figure {
 	background-position: center center;
 	background-repeat: no-repeat;
 	position: relative;
-	border-radius: 20px;
+	margin: auto;
+	border-radius: 30px;
 	height: 270px;
-	width: 100%;
+	width: 270px;
 	display: table;
 	overflow: hidden;
-	@media screen and(max-width: $screen-sm){
-		height: 400px;
-	}
+	box-shadow: 0 0px 20px rgba(42, 11, 15, 0.5);
+	margin-bottom: 50px;
 	@media screen and(max-width: $screen-xs){
 		height: 270px;
+	}
+	&:hover{
+		box-shadow: 0 0px 50px rgba(42, 11, 15, 0.5);
+		transform: translate(-5px, -5px);
 	}
 	.desc{
 		display: table-cell;
 		vertical-align: middle;
 		height: 270px;
-		background: $brand-white;
+		width: 270px;
+		background: rgba($brand-black, 0.7);
 		opacity: 0;
 		@include transition(.3s);
 		h3{
-			font-size: 20px;
+			color: $brand-white;
+			font-size: 30px;
 			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 			transition: transform 0.3s, opacity 0.3s;
 			-webkit-transform: translate3d(0, -15px, 0);
@@ -780,8 +786,8 @@ h1, h2, h3, h4, h5, h6, figure {
 		}
 		span{
 			display: block;
-			color: lighten($brand-black,60%);
-			font-size: 14px;
+			color: lighten($brand-white,60%);
+			font-size: 25px;
 			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 			transition: transform 0.3s, opacity 0.3s;
 			-webkit-transform: translate3d(0, 15px, 0);
@@ -789,7 +795,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		}
 		@media screen and(max-width: $screen-sm){
 			opacity: 1;
-			background: rgba($brand-white,.6);
+			background: rgba($brand-black,.7);
 			h3{
 				-webkit-transform: translate3d(0, 0, 0);
 				transform: translate3d(0, 0, 0);
