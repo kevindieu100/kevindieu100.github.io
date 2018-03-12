@@ -574,6 +574,20 @@ h1, h2, h3, h4, h5, h6, figure {
     left: 0;
     top: 0; }
 
+.work-menu-icon {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: auto;
+  border-radius: 20px;
+  height: 150px;
+  width: 150px;
+  display: table;
+  overflow: hidden;
+  box-shadow: 0 0px 20px rgba(42, 11, 15, 0.5);
+  margin-bottom: 20px; }
+
 .work {
   background-size: cover;
   background-position: center center;
@@ -1051,3 +1065,184 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden; }
+
+.modal-dialog {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0; }
+
+.modal-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid #3c7dcf;
+  border-radius: 0;
+  box-shadow: none; }
+
+.modal-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.modal-title {
+  font-weight: 300;
+  font-size: 2em;
+  color: #fff;
+  line-height: 30px;
+  align-self: center; }
+
+.modal-title-content {
+  color: #fff;
+  vertical-align: middle;
+  line-height: 30px;
+  text-transform: lowercase;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.modal-body {
+  position: absolute;
+  top: 50px;
+  bottom: 60px;
+  width: 100%;
+  font-weight: 300;
+  overflow: auto; }
+
+.modal-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  padding: 10px;
+  background: #f1f3f5; }
+
+.btn {
+  height: 40px;
+  border-radius: 0; }
+  .btn:focus, .btn:active, .btn:active:focus {
+    box-shadow: none;
+    outline: none; }
+
+.btn-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -100px;
+  width: 200px; }
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #fff;
+  color: #767b93;
+  color: #fff;
+  text-align: center;
+  background: #60cc69;
+  border: 1px solid #36a940;
+  border-bottom: 3px solid #36a940;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
+  .btn-primary:active,
+  .btn-primary:hover:active,
+  .btn-primary:focus:active,
+  .btn-primary:active:active {
+    border-bottom: 1px solid #36a940; }
+
+.btn-default,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  background: #bfc5ce;
+  border: 1px solid #a2aab8;
+  border-bottom: 3px solid #a2aab8; }
+  .btn-default:active,
+  .btn-default:hover:active,
+  .btn-default:focus:active,
+  .btn-default:active:active {
+    border-bottom: 1px solid #a2aab8; }
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  color: #cc7272;
+  background: transparent;
+  border: 0; }
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  background: #f1f3f5;
+  border-left: 1px solid #d3dae0; }
+
+::-webkit-scrollbar-thumb {
+  background: #b6c0cb; }
+
+/* WHAT YOU NEED */
+.fading-side-menu.affix-top {
+  opacity: 1;
+  transition: opacity 1s; }
+
+.fading-side-menu.affix {
+  top: 10%; }
+
+.fading-side-menu.affix {
+  opacity: 0.2;
+  transition: opacity 5s; }
+
+.fading-side-menu.affix:hover {
+  opacity: 1;
+  transition: opacity 0.3s; }
+
+/* RECOMMENDED STYLING BUT NOT REQUIRED */
+.fading-side-menu a {
+  color: #666666; }
+
+.fading-side-menu a .fa {
+  padding-right: 15px; }
+
+.carousel-image {
+  background-position: center center;
+  background-size: cover;
+  height: 400px; }
+
+.carousel {
+  margin-bottom: 50px; }
+
+.carousel-caption-text {
+  color: #fff;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.carousel-indicators > li {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.carousel-indicators > li.active {
+  background-color: #000; }
