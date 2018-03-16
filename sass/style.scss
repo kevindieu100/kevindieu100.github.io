@@ -115,7 +115,7 @@ $form-group-margin-bottom:       30px !default;
 body {
 	font-family: $font-primary;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.7;
 	color: darken($brand-white,70%);
 	background: #fff;
@@ -1498,7 +1498,7 @@ input[type="text"] {
 .carousel-image {
 	background-position: center center;
 	background-size: cover;
-	height: 400px;
+	height: 50vh;
 }
 
 .carousel {
@@ -1517,5 +1517,9 @@ input[type="text"] {
 
 .carousel-indicators > li.active {
 	background-color: $brand-black;
+}
+
+.modal-content-container {
+	margin-bottom: 50px;
 }
 // END OF PROJECT MODAL STYLES
