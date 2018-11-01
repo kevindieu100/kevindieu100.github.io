@@ -461,7 +461,7 @@ h1, h2, h3, h4, h5, h6, figure {
         font-size: 18px; }
     .timeline > li.timeline-unverted {
       text-align: right; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 992px) {
         .timeline > li.timeline-unverted {
           text-align: left; } }
     .timeline > li.timeline-inverted > .timeline-panel {

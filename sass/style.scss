@@ -594,7 +594,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		}
 		&.timeline-unverted{
 			text-align: right;
-			@media screen and (max-width: $screen-sm) {
+			@media screen and (max-width: $screen-md) {
 				text-align: left;
 			}
 		}
